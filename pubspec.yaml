@@ -1,6 +1,6 @@
 name: motion_blur
 description: A simple motion blur widget.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/jonaird/motion_blur
 
 environment:

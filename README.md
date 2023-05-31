@@ -1,3 +1,5 @@
+# motion_blur
+This is a package for adding motion blur to moving widgets. It supports translation and scaling blur but not rotational blur. This package uses shaders and thus will not work with platform views.
 
 
 ## Getting started
@@ -8,7 +10,7 @@ dependencies:
     motion_blur:
 ```
 
-Then add the motion blur shader asset under the `flutter` section:
+Then add the motion blur shader under the `flutter` section:
 ```
 flutter:
     shaders:
