@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shaders/flutter_shaders.dart';
-import 'dart:ui' as ui;
 
 class MotionBlur extends StatefulWidget {
   const MotionBlur({
@@ -24,7 +23,6 @@ class MotionBlur extends StatefulWidget {
 class _MotionBlurState extends State<MotionBlur> {
   Size? prevSize;
   Offset? prevPosition;
-  ui.Image? prevFrame;
 
   @override
   void didUpdateWidget(covariant MotionBlur oldWidget) {
@@ -59,8 +57,6 @@ class _MotionBlurState extends State<MotionBlur> {
             Paint()..shader = shader,
           );
           prevSize = size;
-          prevFrame?.dispose();
-          prevFrame = frame.clone();
           prevPosition = position;
         },
         child: widget.child,
