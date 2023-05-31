@@ -1,14 +1,14 @@
 name: motion_blur
 description: A simple motion blur widget.
 version: 0.0.1
-homepage:
+homepage: https://github.com/jonaird/motion_blur
 
 environment:
   sdk: '>=3.0.2 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  flutter_shaders:
+  flutter_shaders: ^0.1.1
   flutter:
     sdk: flutter
 
